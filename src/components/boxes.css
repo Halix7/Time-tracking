@@ -1,0 +1,151 @@
+.sub-box {
+    display: grid;
+    position: relative;
+    color: var(--Pale-Blue);
+    background-color: var(--Light-red-work);
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.Work {
+    background-color: var(--Light-red-work);
+    background-image: url('../images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position-y: calc(-5%);
+    background-position-x: calc(100% - 10%);
+}
+
+.Play {
+    background-color: var(--Soft-blueplay);
+    background-image: url('../images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position-y: calc(-5%);
+    background-position-x: calc(100% - 10%);
+}
+
+.Study {
+    background-color: var(--Light-red-study);
+    background-image: url('../images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position-y: calc(-5%);
+    background-position-x: calc(100% - 10%);
+}
+
+.Exercise {
+    background-color: var(--Lime-green-exercise);
+    background-image: url('../images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position-y: calc(0%);
+    background-position-x: calc(100% - 10%);
+}
+
+.Social {
+    background-color: var( --Violet-social);
+    background-image: url('../images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position-y: calc(0%);
+    background-position-x: calc(100% - 10%);
+}
+
+.Self.Care {
+    background-color: var(--Soft-orange-self-care);
+    background-image: url('../images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position-y: calc(-5%);
+    background-position-x: calc(100% - 10%);
+}
+
+.img {
+    /* background-image: url('../images/icon-work.svg'); */
+    position: absolute;
+    left: 9rem;
+    top: -0.5rem;
+}
+
+.sub-box_body {
+    position: relative;
+    margin-top: 2.5rem;
+    transition: 200ms;
+    background-color: var(--Dark-blue);
+    background-size: cover;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.sub-box_body:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.sub-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.sub-box-header h1 {
+    font-size: var(--font-size);
+    font-weight: 400;
+}
+
+.sub-box-main {
+    margin: 1rem;
+}
+
+.sub-box-main h1 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.sub-box-main p {
+    color: var(--Desaturated-blue);
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+
+@media (max-width:31.625rem) {
+    .sub-box_body {
+        margin-top: 2rem;
+    }
+    .sub-box-header {
+        margin: 0.7rem;
+    }
+    .sub-box-main {
+        margin: 0.8rem;
+        margin-top: 0.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sub-box-main h1 {
+        font-size: 1rem;
+    }
+    .sub-box-main p {
+        font-size: 0.6rem;
+        margin-top: 0;
+    }
+    .Work {
+        background-size: 70px;
+    }
+    .Play {
+        background-size: 70px;
+    }
+    .Study {
+        background-size: 70px;
+    }
+    .Exercise {
+        background-size: 70px;
+    }
+    .Social {
+        background-size: 70px;
+    }
+    .Self.Care {
+        background-size: 60px;
+    }
+}

@@ -30,5 +30,19 @@ The designs were created to the following widths: */
     /* ### Font */
     --Family: 'Rubik', sans-serif;
     --Weights: 300, 400, 500;
-    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Very-dark-blue);
 }
